@@ -1,5 +1,5 @@
-# Vorlesung-GUI-2022
-Vorlesung Grafische Benutzeroberflächen im SS 2022
+# Vorlesung-GUI-2023
+Vorlesung Grafische Benutzeroberflächen im SS 2023
 
 ## Empfohlene Voraussetzungen
 
