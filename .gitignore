@@ -1,0 +1,15 @@
+.gradle
+.idea
+build/
+node_modules/
+
+
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+
+# OSX
+.DS_Store
