@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.throsenheim.gui.locations.LocationsMainPresenter">
+   <right>
+      <fx:include fx:id="locationForm" source="locationform/LocationForm.fxml" />
+   </right>
+   <center>
+      <TableView fx:id="locationsTable" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <columns>
+            <TableColumn prefWidth="75.0" text="Id">
+                <cellValueFactory><PropertyValueFactory property="id" /></cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="75.0" text="Name">
+                <cellValueFactory><PropertyValueFactory property="name" /></cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="75.0" text="Type">
+                <cellValueFactory><PropertyValueFactory property="type" /></cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="75.0" text="Label">
+                <cellValueFactory><PropertyValueFactory property="label" /></cellValueFactory>
+            </TableColumn>
+        </columns>
+      </TableView>
+   </center>
+
+    <bottom>
+        <fx:include source="status/Status.fxml" />
+    </bottom>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+</BorderPane>
