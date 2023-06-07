@@ -1,0 +1,17 @@
+plugins {
+    id 'org.openjfx.javafxplugin' version "0.0.7"
+    id 'application'
+}
+
+
+javafx {
+    modules = [ 'javafx.controls', 'javafx.fxml' ]
+    version = "15"
+}
+
+dependencies {
+    compile project(':05-modules:customer-business')
+    compile project(':05-modules:customer-dataaccess')
+}
+
+mainClassName = "$moduleName/de.throsenheim.gui.architektur.exercise.customer.gui.CustomerGuiMain"
